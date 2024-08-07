@@ -1,0 +1,28 @@
+/* Very basic page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#image-container {
+    flex: 0 0 40%;
+    max-width: calc(100vh * (2080 / 3120)); /* based on the image width/height */
+    background-image: url(/images/background-image.jpg);
+    background-size: auto 100%;
+}
+
+#form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+

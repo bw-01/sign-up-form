@@ -1,28 +1,62 @@
 /* Very basic page reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #container {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 #image-container {
-    flex: 0 0 40%;
-    max-width: calc(100vh * (2080 / 3120)); /* based on the image width/height */
-    background-image: url(/images/background-image.jpg);
-    background-size: auto 100%;
+  flex: 0 0 40%;
+  max-width: calc(100vh * (2080 / 3120)); /* based on the image width/height */
+  background-image: url(/images/background-image.jpg);
+  background-size: auto 100%;
+  position: relative;
+}
+
+#banner {
+  color: aliceblue;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 20vh;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#banner img {
+  width: 50px;
 }
 
 #form-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e5e7eb;
 }
 
+#form-top {
+  padding: 50px;
+}
 
+#form-middle {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 50px;
+}
+
+#form-bottom {
+  padding: 50px;
+}
+
+button {
+  background-color: #596d48;
+}

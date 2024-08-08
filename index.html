@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Sign-up Form Demo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div id="image-container">
-            <!-- <img src="images/background-image.jpg" alt="Image of classic furniture"> -->
+      <div id="image-container">
+        <div id="banner">
+          <img src="images/odin-lined.png" alt="Banner image" id="banner-image" />
+          <h1>ODIN</h1>
         </div>
-        <div id="form-container">
-            <div id="top-container">
-                top
-            </div>
-            <div id="middle-container">
-                middle
-            </div>
-            <div id="bottom-container">
-                bottom
-            </div>
+      </div>
+
+      <div id="form-container">
+        <div id="form-top">
+          <p>
+            This is not a real online service! But don't tell me you don't want this cool styling
+            for your living room. Imagine all the hip friends you will make!
+            <br />Sign up <em>now</em> to get started. <br /><br />You <em>know</em> you want to.
+          </p>
         </div>
+
+        <div id="form-middle">
+          <form action="https://httpbin.org/post" method="post" id="sign-up-form">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="form-row">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" />
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+              <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input type="text" name="email" id="email" />
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" name="phone-number" id="phone-number" />
+              </div>
+              <div class="form-row">
+                <label for="password">PASSWORD</label>
+                <input type="text" name="password" id="password" />
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input type="text" name="password-confirm" id="password-confirm" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div id="form-bottom">
+          <button>Create Account</button>
+          <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

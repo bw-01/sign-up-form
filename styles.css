@@ -15,7 +15,7 @@ body {
 
 @font-face {
   font-family: norse-bold;
-  src: url(/fonts/Norse-Bold.otf);
+  src: url(./fonts/Norse-Bold.otf);
 }
 
 #container {
@@ -26,7 +26,7 @@ body {
 #image-container {
   flex: 0 0 40%;
   max-width: calc(100vh * (2080 / 3120)); /* based on the image width/height */
-  background-image: url(/images/background-image.jpg);
+  background-image: url(./images/background-image.jpg);
   background-size: auto 100%;
   position: relative;
 }

@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --form-padding: 30px;
+}
+
+body {
+  font-family:  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
 #container {
   display: flex;
   height: 100vh;
@@ -19,44 +32,122 @@
 }
 
 #banner {
-  color: aliceblue;
+  color: white;
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 20vh;
-  font-size: 1.2em;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  font-family: norse-bold;
 }
 
 #banner img {
-  width: 50px;
+  height: 100px;
+}
+
+#photo-credit {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+#photo-credit a {
+  color: white;
 }
 
 #form-container {
-  flex: 1;
+  flex: 0 0 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: #e5e7eb;
+  justify-content: center;
+  background-color: whitesmoke;
 }
 
 #form-top {
-  padding: 50px;
+  padding: var(--form-padding);
+  align-content: baseline;
 }
 
 #form-middle {
-  background-color: aliceblue;
-  margin: 0;
-  padding: 50px;
+  background-color: white;
+  padding: var(--form-padding);
+  box-shadow: 2px 2px 5px 1px rgb(205, 205, 214);
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #596D48;
+}
+
+.input-group {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 2px 2px 5px 1px rgb(205, 205, 214);
+}
+
+input:invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+.invalid-entry {
+  display: none;
+  color: red;
+}
+
+input:invalid + .invalid-entry {
+  display: block;
+}
+
+
 #form-bottom {
-  padding: 50px;
+  padding: var(--form-padding);
+  height: 30%;
+  font-weight: 600;
 }
 
 button {
-  background-color: #596d48;
+  background-color: #596D48;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  margin-bottom: var(--form-padding);
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 5px 1px rgb(205, 205, 214);
+}
+
+#form-bottom a {
+  color: #596D48;
 }

@@ -1,6 +1,6 @@
 # Sign-up Form Website
 
-A sign-up form website created to demonstrate understanding of how to utilise forms.
+A sign-up form website created to demonstrate understanding of how to utilise forms and page layout. 
 
 - Author: Bart W
 
